@@ -9,6 +9,7 @@ import AqidahChapter from './pages/AqidahChapter';
 import TeacherDashboard from './pages/TeacherDashboard';
 import { ProgressProvider, useProgress } from './contexts/ProgressContext';
 import ErrorBoundary from './components/common/ErrorBoundary';
+import Preloader from './components/common/Preloader';
 
 /**
  * Komponen UserSync: Memastikan ID Clerk Anda terdaftar di Database Supabase.
@@ -85,6 +86,7 @@ export default function App() {
   return (
     <ClerkProvider publishableKey={clerkPubKey}>
       <ErrorBoundary>
+        <Preloader />
         <BrowserRouter>
         <div className="min-h-screen bg-slate-50 text-slate-900 pb-16 md:pb-0">
           <header className="bg-white border-b sticky top-0 z-50 shadow-sm">
