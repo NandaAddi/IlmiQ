@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-arabic {
+    font-family: "LPMQ IsepMisbah", "Amiri", "Scheherazade New", "Traditional Arabic", serif;
+  }
+}
